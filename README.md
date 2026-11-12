@@ -11,7 +11,8 @@ It introduces me, lists my skills, shows my projects (HOOP, DECLYF and my @notso
 
 - **Home** – name, short intro and quick facts
 - **About Me** – my background in robotics, my diploma and my fitness page
-- **Skills** – web, programming & AI, tools and creative skills
+- **Skills** – web, programming & AI, tools, business (SAP, Advanced Excel, law basics) and creative skills
+- **Experience** – a timeline of my workshops, internship and achievements
 - **Projects** – HOOP, DECLYF and @notsoharit, with filter buttons
 - **Contact** – a contact form that is checked before it is sent
 
