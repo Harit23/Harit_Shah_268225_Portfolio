@@ -546,3 +546,71 @@ section {
   margin-top: 6px;
   color: var(--blue);
 }
+
+/* ===== Responsive: tablets ===== */
+@media (max-width: 900px) {
+  #home {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== Responsive: mobile ===== */
+@media (max-width: 640px) {
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 14px 20px;
+    border-bottom: none;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-grid,
+  .skills-grid,
+  .project-grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}
