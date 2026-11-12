@@ -75,5 +75,54 @@ filterButtons.forEach(function (button) {
   });
 });
 
+// ===== 5. Check the contact form before submitting =====
+const form = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+const successText = document.getElementById("formSuccess");
+
+function showError(input, errorId, text) {
+  document.getElementById(errorId).textContent = text;
+  input.classList.toggle("invalid", text !== "");
+}
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // stop the page from reloading
+  let ok = true;
+  successText.textContent = "";
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (name.length < 2) {
+    showError(nameInput, "nameError", "Please enter your name.");
+    ok = false;
+  } else {
+    showError(nameInput, "nameError", "");
+  }
+
+  if (!emailPattern.test(email)) {
+    showError(emailInput, "emailError", "Please enter a valid email address.");
+    ok = false;
+  } else {
+    showError(emailInput, "emailError", "");
+  }
+
+  if (message.length < 10) {
+    showError(messageInput, "messageError", "Message should be at least 10 characters.");
+    ok = false;
+  } else {
+    showError(messageInput, "messageError", "");
+  }
+
+  if (ok) {
+    successText.textContent = "Thanks " + name + "! Your message is ready to send.";
+    form.reset();
+  }
+});
+
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
