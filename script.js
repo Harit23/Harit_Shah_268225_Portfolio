@@ -43,5 +43,37 @@ navItems.forEach(function (link) {
   });
 });
 
+// ===== 3. Highlight the menu link of the section on screen =====
+const sections = document.querySelectorAll("main section");
+
+window.addEventListener("scroll", function () {
+  let current = "home";
+  sections.forEach(function (section) {
+    if (window.scrollY >= section.offsetTop - 120) {
+      current = section.id;
+    }
+  });
+  navItems.forEach(function (link) {
+    link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+  });
+});
+
+// ===== 4. Project filter buttons =====
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    filterButtons.forEach(function (b) { b.classList.remove("active"); });
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+    projectCards.forEach(function (card) {
+      const match = filter === "all" || card.dataset.category.includes(filter);
+      card.classList.toggle("hide", !match);
+    });
+  });
+});
+
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
