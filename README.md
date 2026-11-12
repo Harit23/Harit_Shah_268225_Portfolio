@@ -1,7 +1,7 @@
 # Harit Shah – Personal Portfolio
 
 My personal portfolio website, made for the **Web Technology** portfolio project (B.Tech CSE-AI).
-It introduces me, lists my skills, shows my projects (HOOP, DECLYF and my @notsoharit fitness content) and has a contact form.
+It introduces me, lists my skills, shows my projects (HOOP, DECLYF, VizualZ Media, Stitch Merchandise and my @notsoharit fitness content) and has a contact form.
 
 🔗 **Live site:** https://harit23.github.io/Harit_Shah_268225_Portfolio/
 
@@ -13,7 +13,7 @@ It introduces me, lists my skills, shows my projects (HOOP, DECLYF and my @notso
 - **About Me** – my background in robotics, my diploma and my fitness page
 - **Skills** – web, programming & AI, tools, business (SAP, Advanced Excel, law basics) and creative skills
 - **Experience** – a timeline of my workshops, internship and achievements
-- **Projects** – HOOP, DECLYF and @notsoharit, with filter buttons
+- **Projects** – HOOP, DECLYF, VizualZ Media, Stitch Merchandise and @notsoharit, with filter buttons
 - **Contact** – a contact form that is checked before it is sent
 
 ## Technologies used
@@ -51,6 +51,7 @@ Harit_Shah_268225_Portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
+├── images/
 ├── README.md
 └── screenshots/
 ```
