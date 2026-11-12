@@ -1,0 +1,164 @@
+/* ===== Colours and basic settings ===== */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f2f5ff;
+  --text: #0a0a0a;
+  --muted: #5b6475;
+  --blue: #2f6bff;
+  --blue-dark: #0a2fa8;
+  --card: #ffffff;
+  --border: #dbe3f7;
+  --shadow: 0 8px 24px rgba(10, 47, 168, 0.10);
+}
+
+/* dark mode colours (class added by script.js) */
+body.dark {
+  --bg: #0a0a0a;
+  --bg-alt: #12151d;
+  --text: #f2f4f8;
+  --muted: #a3acbd;
+  --card: #161a24;
+  --border: #262c3a;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* element selectors */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ===== Header and navbar ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-item {
+  font-weight: 400;
+  color: var(--muted);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+/* hover effect + active link */
+.nav-item:hover,
+.nav-item.active {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+.nav-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  border-color: var(--blue);
+}
+
+.menu-btn {
+  display: none; /* only shown on mobile */
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid var(--blue);
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--blue);
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: #ffffff;
+}
