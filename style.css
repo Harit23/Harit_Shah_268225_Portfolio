@@ -449,3 +449,100 @@ section {
   color: var(--blue);
   font-weight: 600;
 }
+
+/* ===== Contact ===== */
+.contact-wrap {
+  width: 100%;
+}
+
+.contact-intro {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px;
+  max-width: 640px;
+}
+
+.form-row {
+  margin-bottom: 18px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.form-row input.invalid,
+.form-row textarea.invalid {
+  border-color: #e5484d;
+}
+
+.error {
+  color: #e5484d;
+  font-size: 0.85rem;
+  min-height: 1em;
+  display: block;
+  margin-top: 4px;
+}
+
+.form-success {
+  margin-top: 14px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.socials {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.socials a {
+  color: var(--blue);
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+}
+
+.socials a:hover {
+  border-bottom-color: var(--blue);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  padding: 26px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.back-top {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--blue);
+}

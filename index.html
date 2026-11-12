@@ -166,7 +166,47 @@
         </article>
       </div>
     </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section alt" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrap">
+      <p class="contact-intro">Want to work on something together? Send me a message.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <small class="error" id="nameError"></small>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message (at least 10 characters)"></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-success" id="formSuccess"></p>
+      </form>
+
+      <div class="socials">
+        <a href="mailto:harithshah2323@gmail.com">harithshah2323@gmail.com</a>
+        <a href="https://www.instagram.com/notsoharit/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://github.com/Harit23" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      </div>
+    </section>
   </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Harit Shah · Built with HTML, CSS and JavaScript</p>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </footer>
 
 </body>
 </html>
