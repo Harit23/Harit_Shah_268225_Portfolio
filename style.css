@@ -211,16 +211,14 @@ section {
 }
 
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  background: #0a0a0a;
-  display: grid;
-  place-items: center;
-  font-size: 2rem;
-  font-weight: 700;
+  object-fit: cover;
+  display: block;
   margin-bottom: 22px;
   border: 3px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .quick-facts {
@@ -480,6 +478,25 @@ section {
 
 .project-top.content {
   background: linear-gradient(135deg, #2f6bff, #8fb3ff);
+}
+
+.project-top.vizualz {
+  background: linear-gradient(135deg, #0a0a0a, #2f6bff);
+}
+
+.project-top.stitch {
+  background: linear-gradient(135deg, #0b57e3, #0a0a0a);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.project-link:hover {
+  text-decoration: underline;
 }
 
 .project-body {
